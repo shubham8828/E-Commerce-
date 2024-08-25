@@ -24,7 +24,7 @@ const ShopContextProvider = (props) => {
             .then((data) => setAll_Product(data))
 
         if (localStorage.getItem('auth-token')) {
-            fetch('http://localhost:4000/Getcart', {
+            fetch('https://e-commerce-s1pq.onrender.com/Getcart', {
                 method: 'POST',
                 headers: {
                     Accept: 'application/from-data',
